@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="font-inter">
+    <div class="w-[348px] h-[428px] mt-6 mx-auto flex flex-col gap-8">
+      <div class="w-6">
+        <a href="./onboarding3.html" class="w-6 h-6 rounded-sm">
+          <img src="./images/back-btn.png" alt="back-btn" />
+        </a>
+      </div>
+
+      <div class="w-full h-[372px] flex flex-col gap-8">
+        <div class="w-[265px] h-[63px] gap-2">
+          <h1
+            class="text-[#212121] font-extrabold text-[32px] lead-[120%] flex item-center"
+            style="letter-spacing: -1%"
+          >
+            Create account
+          </h1>
+          <p
+            class="text-[#757575] font-normal text-[12px] leading-[140%] flex items-baseline"
+            style="letter-spacing: -1%"
+          >
+            Enter your details below to create an account
+          </p>
+        </div>
+
+        <form
+          id="signUp"
+          action="/submit"
+          method="post"
+          class="w-full h-[277px] flex flex-col gap-6"
+        >
+          <div class="w-full h-[73px] flex flex-col gap-[11px]">
+            <p
+              class="font-normal text-[12px] leading-[140%] text-[#212121]"
+              style="letter-spacing: 1%"
+            >
+              Uniport ARIS PIN
+            </p>
+
+            <input
+              type="password"
+              name="password"
+              id=""
+              class="w-full h-[45px] rounded-lg border-[0.75px] border-[#E4E7EC] px-4 py-3.5 flex items-center gap-2 placeholder:text-[#757575] placeholder:text-[12px] placeholder:font-normal placeholder:leading-[140%]"
+              placeholder="Enter your ARIS PIN"
+            />
+          </div>
+
+          <div class="w-full h-[73px] flex flex-col gap-[11px]">
+            <p
+              class="font-normal text-[12px] leading-[140%] text-[#212121]"
+              style="letter-spacing: 1%"
+            >
+              Password
+            </p>
+
+            <input
+              type="password"
+              name="password"
+              id=""
+              class="w-full h-[45px] rounded-lg border-[0.75px] border-[#E4E7EC] px-4 py-3.5 flex items-center gap-2 placeholder:text-[#757575] placeholder:text-[12px] placeholder:font-normal placeholder:leading-[140%]"
+              placeholder="Enter password"
+            />
+          </div>
+
+          <div class="w-full h-[73px] flex flex-col gap-[11px]">
+            <p
+              class="font-normal text-[12px] leading-[140%] text-[#212121]"
+              style="letter-spacing: 1%"
+            >
+              Confirm Password
+            </p>
+
+            <input
+              type="password"
+              name="password"
+              id=""
+              class="w-full h-[45px] rounded-lg border-[0.75px] border-[#E4E7EC] px-4 py-3.5 flex items-center gap-2 placeholder:text-[#757575] placeholder:text-[12px] placeholder:font-normal placeholder:leading-[140%]"
+              placeholder="Confirm password"
+            />
+          </div>
+        </form>
+
+        <div class="w-[345px] flex flex-col gap-4 mt-[129px]">
+          <!-- <button type="submit" form="signUp">Submit</button> -->
+          <a
+            href="./home.html"
+            class="w-full h-[49px] rounded-lg p-4 flex item-center justify-center gap-2.5 bg-[#003366] font-semibold text-[12px] text-[#FFFFFF] leading-[140%]"
+            style="letter-spacing: 1%"
+            >Create new account</a
+          >
+
+          <p
+            class="font-medium text-[14px] leading-[140%] flex justify-center text-[#212121]"
+            style="letter-spacing: 2%"
+          >
+            Already have an account?
+            <a href="./sign-in.html" class="text-[#003366]"> Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

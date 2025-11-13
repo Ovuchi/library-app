@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+     <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-inter pb-20">
+    <div class="w-[256px] h-12 mt-4 ml-4 flex flex-row gap-2">
+      <div class="w-[42px] h-12 flex items-center justify-center">
+        <img
+          src="./images/profile-image.png"
+          alt=""
+          class="w-[42px] h-[42px] mx-auto my-auto"
+        />
+      </div>
+
+      <div class="w-[206px] h-12 flex flex-col gap-0.5">
+        <p
+          class="font-semibold text-[24px] leading-[120%] text-[#000000] w-[206px] h-[29px]"
+          style="letter-spacing: -1%"
+        >
+          Welcome, Bomate
+        </p>
+        <div class="w-full h-[17px] px-1 flex gap-2.5">
+          <p
+            class="font-normal text-[12px] leading-[140%] text-[#757575] my-auto"
+            style="letter-spacing: 1%"
+          >
+            U2021/9876002
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-[90%] h-[49px] mt-4 mx-auto flex items-center justify-between border-[0.5px] border-[#003366] rounded-3xl p-4"
+    >
+      <div class="flex items-center flex-1 gap-2">
+        <!-- Left Section: Search icon + input -->
+        <div class="flex items-center">
+          <img src="./images/Search.png" alt="" class="w-4 h-4" />
+        </div>
+
+        <!-- Search Input -->
+        <input
+          type="text"
+          placeholder="Search books, authors or journals..."
+          class="flex-1 bg-transparent outline-none text-gray-700 placeholder-[#757575] text-[12px] leading-[140%]"
+        />
+      </div>
+
+      <!-- Right Section: Filter Icon -->
+      <button class="w-4 h-4 hover:text-gray-700">
+        <img src="./images/list-filter.png" alt="" class="" />
+      </button>
+    </div>
+
+    <!-- books -->
+    <div class="max-w-md mx-auto rounded-lg shadow-lg p-6">
+      <!-- Section Header -->
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-semibold text-[20px] text-[#212121] leading-[120%]">My Books</h2>
+        <button class="font-normal text-[12px] leading-[140%] text-[#003366]  hover:text-blue-800 hover:cursor-pointer">
+          See All
+        </button>
+      </div>
+
+      <!-- Horizontal Scroll Container -->
+      <div class="relative bg">
+        <!-- Left Scroll Button -->
+        <button
+          id="scrollLeft"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 opacity-0 transition-opacity"
+        >
+          <svg
+            class="w-5 h-5 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Scrollable Container -->
+        <div
+          id="scrollContainer"
+          class="flex gap-4 overflow-x-auto scroll-smooth hide-scrollbar pb-2"
+        >
+          <!-- Book Items -->
+
+          <!-- Biochemistry -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/biochem.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Biochemistry
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Rashmi Singla
+            </p>
+          </div>
+
+          <!-- The Great Gatsby -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/the-great-gatsby.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              The Great Gatsby
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Scott Fitzgerald
+            </p>
+          </div>
+
+          <!-- Pharmacology -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/pharmacology.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Pharmacology
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Rashmi Singla
+            </p>
+          </div>
+
+          <!-- The End Of Lonliness -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/the-end-of-lonliness.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              The End of Lonliness
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Benedict Wells
+            </p>
+          </div>
+
+          <!-- Human Physiology -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/human physiology.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Human Physiology
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Bryan Derrickson
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Scroll Button -->
+        <button
+          id="scrollRight"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 transition-opacity"
+        >
+          <svg
+            class="w-5 h-5 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Return Soon Section -->
+      <div class="mt-8">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-[20px] font-semibold text-[#212121] leading-[120%]">Return Soon</h2>
+          
+        </div>
+
+        <div class="relative">
+          <button
+            id="scrollLeft2"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 opacity-0 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <div
+            id="scrollContainer2"
+            class="flex gap-4 overflow-x-auto scroll-smooth hide-scrollbar pb-2"
+          >
+            <!-- The Great Gatsby -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/the-great-gatsby.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              The Great Gatsby
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              return 13th September
+            </p>
+          </div>
+
+           <!-- The End Of Lonliness -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/the-end-of-lonliness.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              The End of Lonliness
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              return 18th September
+            </p>
+          </div>
+
+          </div>
+
+          <button
+            id="scrollRight2"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- Sticky Footer Navigation -->
+<footer class="fixed bottom-0 left-0 right-0 bg-[#FFFFFF] border-t border-gray-200 px-6 py-2 z-50">
+  <div class="max-w-md mx-auto flex justify-around items-center">
+    <!-- Home -->
+    <a href="#" class="flex flex-col items-center gap-1 text-gray-500 hover:text-[#003366]">
+      <img src="./images/home-icon.png" alt="" class="w-6 h-6" />
+      <span class="text-[10px] text-[#003366] font-medium">Home</span>
+    </a>
+    
+    <!-- Search -->
+    <a href="#" class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]">
+      <img src="./images/search-icon.png" alt="" class="w-6 h-6" />
+      <span class="text-[10px] font-medium">Search</span>
+    </a>
+    
+    <!-- My Books -->
+    <a href="#" class="flex flex-col items-center gap-1 text-[#757575] relative">
+      <img src="./images/books-icon.png" alt="" class="w-6 h-6" />
+      <span class="text-[10px] font-medium">My Books</span>
+    
+    </a>
+    
+    <!-- Profile -->
+    <a href="#" class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]">
+      <img src="./images/profile-icon.png" alt="" class="w-6 h-6" />
+      <span class="text-[10px] font-medium">Profile</span>
+    </a>
+  </div>
+</footer>
+  </body>
+
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <script>
+    // Function to setup scroll functionality for a container
+    function setupScroll(containerId, leftBtnId, rightBtnId) {
+      const container = document.getElementById(containerId);
+      const leftBtn = document.getElementById(leftBtnId);
+      const rightBtn = document.getElementById(rightBtnId);
+
+      // Scroll amount (adjust as needed)
+      const scrollAmount = 200;
+
+      // Update button visibility based on scroll position
+      function updateButtons() {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+
+        if (container.scrollLeft <= 0) {
+          leftBtn.style.opacity = "0";
+          leftBtn.style.pointerEvents = "none";
+        } else {
+          leftBtn.style.opacity = "1";
+          leftBtn.style.pointerEvents = "auto";
+        }
+
+        if (container.scrollLeft >= maxScroll - 1) {
+          rightBtn.style.opacity = "0";
+          rightBtn.style.pointerEvents = "none";
+        } else {
+          rightBtn.style.opacity = "1";
+          rightBtn.style.pointerEvents = "auto";
+        }
+      }
+
+      // Scroll left
+      leftBtn.addEventListener("click", () => {
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+
+      // Scroll right
+      rightBtn.addEventListener("click", () => {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+
+      // Update buttons on scroll
+      container.addEventListener("scroll", updateButtons);
+
+      // Initial button state
+      updateButtons();
+    }
+
+    // Setup both scroll containers
+    setupScroll("scrollContainer", "scrollLeft", "scrollRight");
+    setupScroll("scrollContainer2", "scrollLeft2", "scrollRight2");
+  </script>
+</html>
