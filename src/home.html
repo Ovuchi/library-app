@@ -58,10 +58,10 @@
     </div>
 
     <!-- books -->
-    <div class="max-w-md mx-auto rounded-lg shadow-lg p-6">
+    <div class="max-w-md mx-auto rounded-lg p-4">
       <!-- Section Header -->
       <div class="flex justify-between items-center mb-4">
-        <h3 class="font-semibold text-[20px] text-[#212121] leading-[120%]">My Books</h2>
+        <h3 class="font-semibold text-[20px] text-[#212121] leading-[120%]">My Books</h3>
         <button class="font-normal text-[12px] leading-[140%] text-[#003366]  hover:text-blue-800 hover:cursor-pointer">
           See All
         </button>
@@ -319,11 +319,90 @@
         </div>
       </div>
 
+
+      <!-- Borrow Again Section -->
+      <div class="mt-8">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-[20px] font-semibold text-[#212121] leading-[120%]">Borrow Again</h3>        
+        </div>
+
+        <div class="relative">
+          <button
+            id="scrollLeft2"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 opacity-0 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <div
+            id="scrollContainer2"
+            class="flex gap-4 overflow-x-auto scroll-smooth hide-scrollbar pb-2"
+          >
+            <!-- The Great Gatsby -->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/the-great-gatsby.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              The Great Gatsby
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Scott Fitzgerald
+            </p>
+          </div>
+
+        
+          <!-- Purple Hisbiscus-->
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/purple hisbiscus.png"
+              alt="biochem textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Purple Hisbiscus 
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Chimamanda Adichie
+            </p>
+          </div>
+
+          </div>
+
+          
+        </div>
+      </div>
       
     </div>
 
     <!-- Sticky Footer Navigation -->
-<footer class="fixed bottom-0 left-0 right-0 bg-[#FFFFFF] border-t border-gray-200 px-6 py-2 z-50">
+  <footer class="fixed bottom-0 left-0 right-0 bg-[#FFFFFF] border-t border-gray-200 px-6 py-2 z-50">
   <div class="max-w-md mx-auto flex justify-around items-center">
     <!-- Home -->
     <a href="#" class="flex flex-col items-center gap-1 text-gray-500 hover:text-[#003366]">
@@ -349,8 +428,8 @@
       <img src="./images/profile-icon.png" alt="" class="w-6 h-6" />
       <span class="text-[10px] font-medium">Profile</span>
     </a>
-  </div>
-</footer>
+   </div>
+   </footer>
   </body>
 
   <style>
