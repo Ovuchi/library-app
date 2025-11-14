@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-inter pb-18">
+    <!-- Search Bar and Options -->
+    <div class="w-[345px] h-[81px] mt-4 mx-auto flex flex-col gap-2">
+      <div
+        class="w-full h-[49px] mx-auto flex items-center justify-between border-[0.5px] border-[#003366] rounded-3xl p-4"
+      >
+        <div class="flex items-center flex-1 gap-2">
+          <!-- Left Section: Search icon + input -->
+          <div class="flex items-center">
+            <img src="./images/Search.png" alt="" class="w-4 h-4" />
+          </div>
+
+          <!-- Search Input -->
+          <input
+            type="text"
+            placeholder="Search books, authors or journals..."
+            class="flex-1 bg-transparent outline-none text-gray-700 placeholder-[#757575] text-[12px] leading-[140%]"
+          />
+        </div>
+
+        <!-- Right Section: Filter Icon -->
+        <button class="w-4 h-4 hover:text-gray-700">
+          <img src="./images/list-filter.png" alt="" class="" />
+        </button>
+      </div>
+
+      <div class="w-full h-6 flex flex-row gap-4">
+        <div class="w-[297px] h-[22px] flex flex-row gap-1">
+          <!-- Physiology -->
+          <div class="w-[70px] h-[22px] rounded-3xl px-2 py-1 bg-[#4F81BD]">
+            <p
+              class="font-medium text-[#FFFFFF] text-[10px] leading-[140%]"
+              style="letter-spacing: 1%"
+            >
+              Physiology
+            </p>
+          </div>
+
+          <!-- Art -->
+          <div class="w-8 h-[22px] rounded-3xl px-2 py-1 bg-[#F5F5F5]">
+            <p
+              class="font-medium text-[#212121] text-[10px] leading-[140%]"
+              style="letter-spacing: 1%"
+            >
+              Art
+            </p>
+          </div>
+
+          <!-- Business -->
+          <div class="w-[60px] h-[22px] rounded-3xl px-2 py-1 bg-[#F5F5F5]">
+            <p
+              class="font-medium text-[#212121] text-[10px] leading-[140%]"
+              style="letter-spacing: 1%"
+            >
+              Business
+            </p>
+          </div>
+
+          <!-- Chemistry -->
+          <div class="w-[67px] h-[22px] rounded-3xl px-2 py-1 bg-[#F5F5F5]">
+            <p
+              class="font-medium text-[#212121] text-[10px] leading-[140%]"
+              style="letter-spacing: 1%"
+            >
+              Chemistry
+            </p>
+          </div>
+
+          <!-- History -->
+          <div class="w-[52px] h-[22px] rounded-3xl px-2 py-1 bg-[#F5F5F5]">
+            <p
+              class="font-medium text-[#212121] text-[10px] leading-[140%]"
+              style="letter-spacing: 1%"
+            >
+              History
+            </p>
+          </div>
+        </div>
+
+        <div class="w-6 h-6 rounded-sm flex gap-2.5 bg-[#F5F5F5]">
+          <img src="./images/chevron-down.png" alt="chevron-down" />
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[335px] h-36 mt-[23px] ml-10 flex flex-row gap-6">
+      <div class="w-[287px] h-full flex gap-2">
+        <div class="w-[120px] h-full">
+          <img
+            src="./images/guyton-and-hall-physiology.png"
+            alt="guyton and hall physiology"
+            class="rounded-lg"
+          />
+        </div>
+
+        <div class="w-[159px] h-[79px] flex flex-col">
+          <p
+            class="font-semibold text-[12px] text-[#212121] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Guyton and Hall Textbook of Medical Physiology <br />
+            (14<sup><span class="font-normal text-[10px]">th</span></sup>
+            Ed)
+          </p>
+
+          <p
+            class="font-normal text-[12px] text-[#757575] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            by John and Michael E. Hall
+          </p>
+
+          <p
+            class="font-semibold text-[10px] text-[#4CAF50] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Available for borrow
+          </p>
+        </div>
+      </div>
+
+      <div class="w-6 h-6 flex items-center justify-center">
+        <img src="./images/bookmark-btn.png" alt="" />
+      </div>
+    </div>
+
+    <div class="w-[335px] h-36 mt-[23px] ml-10 flex flex-row gap-6">
+      <div class="w-[287px] h-full flex gap-2">
+        <div class="w-[120px] h-full">
+          <img
+            src="./images/fundamentals-of-med-phy.png"
+            alt="fundamentals-of-med-phy"
+            class="rounded-lg"
+          />
+        </div>
+
+        <div class="w-[154px] h-[81px] flex flex-col">
+          <p
+            class="font-semibold text-[12px] text-[#212121] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Fundamentals of Medical Physiology (1<sup
+              ><span class="font-normal text-[10px]">st</span></sup
+            >
+            Ed)
+          </p>
+
+          <p
+            class="font-normal text-[12px] text-[#757575] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            by A. P. Krishna
+          </p>
+
+          <p
+            class="font-semibold text-[10px] text-[#E53935] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Checked out
+          </p>
+
+          <p
+            class="font-semibold text-[10px] text-[#757575] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            due back in 10 days.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-6 h-6 flex items-center justify-center">
+        <img src="./images/bookmark-btn.png" alt="" />
+      </div>
+    </div>
+
+    <div class="w-[335px] h-36 mt-[23px] ml-10 flex flex-row gap-6">
+      <div class="w-[287px] h-full flex gap-2">
+        <div class="w-[120px] h-full">
+          <img
+            src="./images/human physiology.png"
+            alt="human physiology"
+            class="rounded-lg"
+          />
+        </div>
+
+        <div class="w-[154px] h-12 flex flex-col">
+          <p
+            class="font-semibold text-[12px] text-[#212121] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Human Physiology (2<sup
+              ><span class="font-normal text-[10px]">nd</span></sup
+            >
+            Ed)
+          </p>
+
+          <p
+            class="font-normal text-[12px] text-[#757575] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            by Bryan Derrickson
+          </p>
+
+          <p
+            class="font-semibold text-[10px] text-[#4CAF50] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Available for borrow
+          </p>
+        </div>
+      </div>
+
+      <div class="w-6 h-6 flex items-center justify-center">
+        <img src="./images/checked-bookmark.png" alt="" />
+      </div>
+    </div>
+
+    <div class="w-[335px] h-36 mt-[23px] ml-10 flex flex-row gap-6">
+      <div class="w-[287px] h-full flex gap-2">
+        <div class="w-[120px] h-full">
+          <img
+            src="./images/anatomy-and-phy-for-nursing.png"
+            alt="anatomy-and-phy-for-nursing"
+            class="rounded-lg"
+          />
+        </div>
+
+        <div class="w-[154px] h-[65px] flex flex-col">
+          <p
+            class="font-semibold text-[12px] text-[#212121] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Anatomy and Physiology for Nursing (4<sup
+              ><span class="font-normal text-[10px]">th</span></sup
+            >
+            Ed)
+          </p>
+
+          <p
+            class="font-normal text-[12px] text-[#757575] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            by Dr. A. J. Jain
+          </p>
+
+          <p
+            class="font-semibold text-[10px] text-[#4CAF50] leading-[140%]"
+            style="letter-spacing: 1%"
+          >
+            Available for borrow
+          </p>
+        </div>
+      </div>
+
+      <div class="w-6 h-6 flex items-center justify-center">
+        <img src="./images/bookmark-btn.png" alt="" />
+      </div>
+    </div>
+
+    <footer
+      class="fixed bottom-0 left-0 right-0 bg-[#FFFFFF] border-t border-gray-200 px-6 py-2 z-50"
+    >
+      <div class="max-w-md mx-auto flex justify-around items-center">
+        <!-- Home -->
+        <a
+          href="./home.html"
+          class="flex flex-col items-center gap-1 text-gray-500 hover:text-[#003366]"
+        >
+          <img src="./images/home-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">Search</span>
+        </a>
+
+        <!-- Search -->
+        <a
+          href="./search.html"
+          class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]"
+        >
+          <img src="./images/search-active-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] text-[#003366] font-medium">Search</span>
+        </a>
+
+        <!-- My Books -->
+        <a
+          href="#"
+          class="flex flex-col items-center gap-1 text-[#757575] relative"
+        >
+          <img src="./images/books-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">My Books</span>
+        </a>
+
+        <!-- Profile -->
+        <a
+          href="#"
+          class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]"
+        >
+          <img src="./images/profile-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">Profile</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
