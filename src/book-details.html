@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-inter pb-18">
+    <div class="w-[336px] h-[25px] mt-6 mx-auto flex justify-between">
+      <a href="./index.html" class="w-6 h-6 rounded-sm">
+        <img src="./images/back-btn.png" alt="" />
+      </a>
+
+      <a href="#"> <img src="./images/bookmark-btn.png" alt="" /> </a>
+    </div>
+
+    <div class="w-[280px] h-[441px] mx-auto mt-8 flex flex-col gap-2">
+      <img
+        src="./images/guyton-and-hall.png"
+        alt="Guyton and Hall Physiology Textbook"
+        class="w-[206px] h-[278px] mx-auto"
+      />
+      <div class="w-full h-[155px] flex flex-col gap-4">
+        <div class="w-full h-[90px] flex flex-col gap-1">
+          <p
+            class="font-semibold text-[12px] leading-[140%] text-center text-[#4CAF50]"
+            style="letter-spacing: 1%"
+          >
+            Available
+          </p>
+
+          <h3
+            class="font-semibold text-[20px] leading-[120%] text-center text-[#212121]"
+          >
+            Guyton and Hall Textbook of Medical Physiology
+            <span class="font-normal text-[10px]">(14<sup>th</sup>Ed)</span>
+          </h3>
+          <p
+            class="font-semibold text-[12px] leading-[140%] text-center text-[#757575]"
+            style="letter-spacing: 1%"
+          >
+            by John and Michael E. Hall
+          </p>
+        </div>
+        <div class="w-full h-[49px] flex flex-row gap-12">
+          <div class="w-[46px] h-[30px] my-auto flex flex-col">
+            <img src="./images/info.png" alt="info" class="w-4 h-4 mx-auto" />
+            <p
+              class="font-normal text-[10px] text-[#003366] leading-[140%] text-center"
+              style="letter-spacing: 1%"
+            >
+              Book info
+            </p>
+          </div>
+          <div
+            class="w-[104px] h-full rounded-lg p-4 bg-[#003366] flex justify-center items-center"
+          >
+            <a
+              href="#"
+              class="font-semibold text-[12px] text-[#FFFFFF] leading-[140%]"
+              style="letter-spacing: 1%"
+              >Borrow Now</a
+            >
+          </div>
+          <div class="w-7 h-[30px] my-auto flex flex-col">
+            <img
+              src="./images/share.png"
+              alt="share"
+              class="w-[13.33px] h-[13.33px] mx-auto"
+            />
+            <p
+              class="font-normal text-[10px] text-[#003366] leading-[140%] text-center"
+              style="letter-spacing: 1%"
+            >
+              Share
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[345px] h-0 border border-[#F5F5F5] mx-auto mt-4"></div>
+
+    <!-- Other Editions Section -->
+    <div class="mt-4">
+      <div class="flex justify-between items-center mb-4 w-[345px] mx-auto">
+        <p
+          class="text-[16px] font-semibold text-[#212121] leading-[140%]"
+          style="letter-spacing: 1%"
+        >
+          Other Editions
+        </p>
+
+        <p
+          class="font-normal text-[10px] leading-[140%] text-[#003366]"
+          style="letter-spacing: 1%"
+        >
+          See All
+        </p>
+      </div>
+
+      <div class="relative">
+        <button
+          id="scrollLeft2"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-lg p-2 opacity-0 transition-opacity"
+        >
+          <svg
+            class="w-5 h-5 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="scrollContainer2"
+          class="flex gap-4 overflow-x-auto scroll-smooth hide-scrollbar pb-2 ml-10"
+        >
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/guyton-1.png"
+              alt="physiology textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Guyton and Hall Textbook of Medical Physiology
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              by John and E. Hall
+            </p>
+          </div>
+
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/guyton-2.png"
+              alt="phy textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Guyton and Hall Textbook of Medical Physiology
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              John and E. Hall
+            </p>
+          </div>
+
+          <div class="shrink-0 w-32">
+            <img
+              src="./images/guyton-3.png"
+              alt="phy textbook"
+              class="rounded-lg h-44 mb-2"
+            />
+            <p
+              class="font-semibold text-[12px] text-[#212121] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              Guyton and Hall Textbook of Medical Physiology
+            </p>
+            <p
+              class="font-normal text-[12px] text-[#757575] leading-[140%] my-auto"
+              style="letter-spacing: 1%"
+            >
+              John and E. Hall
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="fixed bottom-0 left-0 right-0 bg-[#FFFFFF] border-t border-gray-200 px-6 py-2 z-50"
+    >
+      <div class="max-w-md mx-auto flex justify-around items-center">
+        <!-- Home -->
+        <a
+          href="./home.html"
+          class="flex flex-col items-center gap-1 text-gray-500 hover:text-[#003366]"
+        >
+          <img src="./images/home-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">Search</span>
+        </a>
+
+        <!-- Search -->
+        <a
+          href="./search.html"
+          class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]"
+        >
+          <img src="./images/search-active-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] text-[#003366] font-medium">Search</span>
+        </a>
+
+        <!-- My Books -->
+        <a
+          href="#"
+          class="flex flex-col items-center gap-1 text-[#757575] relative"
+        >
+          <img src="./images/books-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">My Books</span>
+        </a>
+
+        <!-- Profile -->
+        <a
+          href="#"
+          class="flex flex-col items-center gap-1 text-[#757575] hover:text-[#003366]"
+        >
+          <img src="./images/profile-icon.png" alt="" class="w-6 h-6" />
+          <span class="text-[10px] font-medium">Profile</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
